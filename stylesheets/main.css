@@ -1,0 +1,43 @@
+body {
+	background-image: url('../images/cloud-pattern.png');
+
+	font-family: helvetica, arial, verdana;
+} 
+
+
+
+
+img#logo {
+	position: relative;
+	margin-top: -2em;
+}
+
+img#polaroid {
+	float: right;
+	
+	margin-top: 2em;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+div#main {
+	background: #fff;
+	width: 45em;
+	
+	min-height: 15em;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	
+	padding-left: 1.5em;
+	padding-bottom: 2em;
+}
+
+#slogan {
+	position: absolute;
+	top: 5em;
+}

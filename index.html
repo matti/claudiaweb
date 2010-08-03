@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Claudia Research</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+
+		<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery-ui-1.8.2.custom.min"></script>
+
+		<script type="text/javascript">
+		 
+			$(document).ready(function() {
+				if (getUrlVars()["dev"] == null)
+					runWelcomeAnimation();
+				else
+					$('#slogan').hide();
+			});
+
+			function runWelcomeAnimation() {
+				$('#main').hide();
+				$('#logo').hide();
+				$('#polaroid').hide();
+				$('#content').hide();
+				
+				window.setTimeout("$('#main').fadeIn();", 1000);
+				
+				window.setTimeout("$('#slogan').fadeIn();", 1500);
+				window.setTimeout("$('#slogan').fadeOut();", 2500);
+				
+				window.setTimeout("$('#logo').show('bounce', {}, 300, logoBounced);", 3200);
+				window.setTimeout("$('#polaroid').show();", 3200);
+			}
+			
+			function logoBounced() {
+				$('#content').show();
+			}
+			
+			function getUrlVars()
+			{
+			    var vars = [], hash;
+			    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			    for(var i = 0; i < hashes.length; i++)
+			    {
+			        hash = hashes[i].split('=');
+			        vars.push(hash[0]);
+			        vars[hash[0]] = hash[1];
+			    }
+			    return vars;
+			}
+		</script>
+		
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		
+		<header>
+			<div id="logoContainer">
+			</div>
+			
+		</header>
+
+		<section>
+			<div id="main">
+				<h2 id="slogan">Emerging web technologies are us.</h2>
+				
+				<img src="images/logo.png" alt="Claudia Research" id="logo" />
+
+				<img src="images/petrus_matti.png" alt="Petrus and Matti" id="polaroid" />
+
+
+				<section id="content">
+					<h3></h3>
+					
+					<h3>Getting things done</h3>
+					<ul>
+						<li>Vienna.js JavaScript User Group, 28.7.2010
+							<ul>
+								<li>Presentation: <a href="http://tweetphoto.com/35417817">SVG and JavaScript</a></li>
+							</ul>
+						</li>
+
+						<li>Cloud Software Program Q2 Review, 21.6.2010
+							<ul>
+								<li>Poster: <a href="images/cloud-technology-circle-poster.png">Software Factory &amp; Emerging Cloud Technologies</a></li>
+							</ul>
+						</li>
+
+						<li>Berlin.js JavaScript User Group, 17.6.2010
+							<ul>
+								<li>Presentation: <a href="images/berlinjs062010.jpg">SVG and JavaScript</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<h3>Contact information</h3>
+					
+<pre>
+Claudia Research
+<a href="mailto:claudia@cs.helsinki.fi">claudia@cs.helsinki.fi</a>
++358-9-191 51157
+
+Exactum / B205
+Department of Computer Science
+
+Gustaf Hällströmin katu 2b
+00014 University of Helsinki
+Finland
+</pre>
+					
+				</div>
+
+			</div>
+			
+		</section>
+
+		<footer>
+		</footer>
+
+	</body>
+
+</html>
