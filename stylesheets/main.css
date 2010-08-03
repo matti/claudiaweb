@@ -1,43 +1,77 @@
-body {
-	background-image: url('../images/cloud-pattern.png');
-
-	font-family: helvetica, arial, verdana;
-} 
-
-
-
-
-img#logo {
-	position: relative;
-	margin-top: -2em;
+article,aside,figure,footer,header,hgroup,nav,section {
+	display: inline-block;
 }
 
-img#polaroid {
-	float: right;
+body {
+	background-image: url('../images/cloud-pattern.png');
+	font-family: helvetica, arial, verdana;
+
+	width: 45em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	display: block;
+	margin-top: 3em;
+	margin-bottom: -1em; /* logo on top */
+}
+
+
+/* Site consists of white boxes, defined here */
+
+section {
+	display: block;
+}
+
+.solidBg section {
+	background: #fff;
+}
+
+.rounded section {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.centered section {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boxed section {
+	padding-top: 0.3em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	padding-bottom: 0.3em;
 	
-	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.dropShadowed section {
+	box-shadow: 3px 3px 5px #888;
+	-moz-box-shadow: 3px 3px 5px #888;
+	-webkit-box-shadow: 3px 3px 5px #888;
+}
+
+
+/* other */ 
+
+img.dropShadowed { /* using #999 helps with white pixels */
+	box-shadow: 3px 3px 10px #999;
+	-moz-box-shadow: 3px 3px 10px #999;
+	-webkit-box-shadow: 3px 3px 10px #999;
+}
+
+.right {
+	float: right;
+}
+
+.rotate10 {
 	-webkit-transform: rotate(10deg);
 	-moz-transform: rotate(10deg);
 }
 
 li {
 	margin-bottom: 0.5em;
-}
-div#main {
-	background: #fff;
-	width: 45em;
-	
-	min-height: 15em;
-	
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3em;
-	
-	padding-left: 1.5em;
-	padding-bottom: 2em;
-}
-
-#slogan {
-	position: absolute;
-	top: 5em;
 }

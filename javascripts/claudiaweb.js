@@ -1,27 +1,24 @@
 $(document).ready(function() {
 	if (getUrlVars()["dev"] == null)
 		runWelcomeAnimation();
-	else
-		$('#slogan').hide();
 });
 
 function runWelcomeAnimation() {
-	$('#main').hide();
 	$('#logo').hide();
-	$('#polaroid').hide();
-	$('#content').hide();
+	$('section section').hide();
+	$('section#slogans').children().hide();
 	
-	window.setTimeout("$('#main').fadeIn();", 1000);
 	
-	window.setTimeout("$('#slogan').fadeIn();", 1500);
-	window.setTimeout("$('#slogan').fadeOut();", 2500);
-	
-	window.setTimeout("$('#logo').show('bounce', {}, 300, logoBounced);", 3200);
-	window.setTimeout("$('#polaroid').show();", 3200);
+	window.setTimeout("$('section#slogans').fadeIn();", 1250);
+	window.setTimeout("$('#slogan').fadeIn();", 1750);
+
+	window.setTimeout("$('#logo').show('bounce', {}, 400, logoBounced);", 2750);
+
 }
 
 function logoBounced() {
-	$('#content').show();
+	$('#polaroid').show();
+	$('section section').show();
 }
 
 function getUrlVars()
