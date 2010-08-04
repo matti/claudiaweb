@@ -29,38 +29,28 @@ h3 + p {
 	font-size: 0.9em;
 }
 
-.solidBg section {
-	background: #fff;
-}
-
-.rounded section {
+body > section {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-}
 
-.centered section {
 	margin-left: auto;
 	margin-right: auto;
-}
 
-.boxed section {
+	background: #fff;
+
 	padding-top: 0.3em;
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	padding-bottom: 0.3em;
 	
 	margin-bottom: 2em;
-}
 
-.dropShadowed section {
 	box-shadow: 3px 3px 5px #888;
 	-moz-box-shadow: 3px 3px 5px #888;
 	-webkit-box-shadow: 3px 3px 5px #888;
 }
 
-
-/* other */ 
 
 img.dropShadowed { /* using #999 helps with white pixels */
 	box-shadow: 3px 3px 10px #999;
@@ -68,13 +58,14 @@ img.dropShadowed { /* using #999 helps with white pixels */
 	-webkit-box-shadow: 3px 3px 10px #999;
 }
 
-.right {
-	float: right;
-}
 
 .rotate10 {
 	-webkit-transform: rotate(10deg);
 	-moz-transform: rotate(10deg);
+}
+
+.right {
+	float: right;
 }
 
 li {
