@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	if (getUrlVars()["dev"] == null)
 		runWelcomeAnimation();
+		
+	$('#polaroid').click( function() { $(this).effect('bounce'); });
 });
 
 function runWelcomeAnimation() {
