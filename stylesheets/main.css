@@ -24,6 +24,11 @@ section {
 	display: block;
 }
 
+h3 + p {
+	margin-top: -1em;
+	font-size: 0.9em;
+}
+
 .solidBg section {
 	background: #fff;
 }
