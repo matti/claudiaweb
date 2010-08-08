@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 function runWelcomeAnimation() {
 	$('#logo').hide();
-	$('section section').hide();
+	$('section').hide();
 	$('section#slogans').children().hide();
 	
 	
@@ -20,7 +20,7 @@ function runWelcomeAnimation() {
 
 function logoBounced() {
 	$('#polaroid').show();
-	$('section section').show();
+	$('section').show();
 }
 
 function getUrlVars()
